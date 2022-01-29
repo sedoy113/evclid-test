@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Stanislav Kurskov" />
+		<meta name="description" content="Евклид - Тестовый проект" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Евклид - Тестовый</title>
+
+		<link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div id="burger" class="burger">
+				<div class="burger__block">
+					<button id="burger-esc" class="btn burger__esc-btn">
+						<img src="img/header/header-burger.svg" alt="кнопка меню" />
+					</button>
+					<nav class="burger__nav">
+						<ul class="burger__items">
+							<li class="burger__item"><a href="#">О нас</a></li>
+							<li class="burger__item"><a href="#">Проекты</a></li>
+							<li class="burger__item"><a href="#">Этапы</a></li>
+							<li class="burger__item"><a href="#">Отзывы</a></li>
+							<li class="burger__item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="container top">
+				<button id="burger-open" class="btn-icon btn-burger">
+					<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="30" height="3" fill="#333333" />
+						<rect y="10" width="30" height="3" fill="#333333" />
+						<rect y="20" width="30" height="3" fill="#333333" />
+					</svg>
+				</button>
+				<a class="top__link" href="#">
+					<img class="top__link-img" src="img/header/header__logo.png" alt="Логотип компании Евклид" />
+				</a>
+				<nav class="top__nav">
+					<ul class="top__items">
+						<li class="top__item"><a href="#">О нас</a></li>
+						<li class="top__item"><a href="#">Проекты</a></li>
+						<li class="top__item"><a href="#">Этапы</a></li>
+						<li class="top__item"><a href="#">Отзывы</a></li>
+						<li class="top__item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<button aria-label="поиск по сайту" class="btn-icon btn-search">
+					<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333" />
+						<circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2" />
+					</svg>
+				</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<section class="carousel">
+					<div class="slider-container">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide carousel__bg-1"></div>
+								<div class="swiper-slide carousel__bg-2"></div>
+								<div class="swiper-slide carousel__bg-3"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel__box">
+						<div class="carousel__content">
+							<h1 class="carousel__title">Проектные решения любой сложности</h1>
+							<p class="carousel__text">
+								Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+								проектантов
+							</p>
+							<button class="btn carousel-btn">Заказать расчёт</button>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</section>
+			</div>
+
+			<section class="about-us">
+				<div class="container">
+					<div>
+						<h2 class="about-us__title">О нас</h2>
+						<p class="about-us__text-top">
+							Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда
+							внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и
+							грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены
+							отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных,
+							так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего
+							проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных
+							задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует
+							повышению качества экспериментов.
+						</p>
+					</div>
+					<div class="about-us__bottom">
+						<div class="about-us__left">
+							<div class="about-us__bg"></div>
+							<div class="block__text">
+								<p class="block-info__text">
+									Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и
+									реализации новых принципов.
+								</p>
+								<a href="#" class="btn about-us-btn"> Подробнее </a>
+							</div>
+						</div>
+						<div class="about-us__items">
+							<div class="about-us__item">
+								<div class="about-us__img">
+									<img src="img/about-us/about-us__item-box.png" alt="значек коробка" />
+								</div>
+								<div>
+									<h3 class="about-us__item-title">Консультация с широким активом</h3>
+									<p class="about-us__item-text">
+										А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как
+										самодостаточных, так и внешне зависимых концептуальных решений.
+									</p>
+								</div>
+							</div>
+							<div class="about-us__item">
+								<div class="about-us__img">
+									<img src="img/about-us/about-us__item-gear.png " alt="значек шестеренка" />
+								</div>
+								<div>
+									<h3 class="about-us__item-title">В своём стремлении повысить</h3>
+									<p class="about-us__item-text">
+										Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный
+										эксперимент проверки прогресса профессионального сообщества.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- container -->
+			</section>
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" defer></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+		<script src="js/index.js" defer></script>
+	</body>
+</html>
